@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+        "alexkrechik.cucumberautocomplete",
+        "patrickelfert.cypress-cucumber-generator"
+    ]
+}

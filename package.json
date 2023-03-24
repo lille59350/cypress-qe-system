@@ -1,0 +1,48 @@
+{
+  "name": "cypress-qe-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "cy:run": "cypress run"
+  },
+
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/lille59350/cypress-qe-system.git"
+  },
+
+  "keywords": [],
+  "author": "Yvon-Arnaud",
+  "license": "ISC",
+  "bugs":{
+    "url": "https://github.com/lille59350/cypress-qe-system/issues"
+  },
+
+  "homepage": "https://github.com/lille59350/cypress-qe-system#readme",
+
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/specs/**/*.ts"
+  },
+  "dependencies": {
+    "cypress": "^12.4.1"
+  },
+
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.2",
+    "@cypress/webpack-preprocessor": "^5.16.1",
+    "@types/dotenv-webpack":"^7.0.3",
+    "@typescript-eslint/eslint-plugin":"^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "ts-loader":"9.4.2",
+    "webpack":"^5.75.0",
+    "typescript":"^4.9.4",
+    "dotenv-webpack": "^8.0.1"
+  }
+
+}
